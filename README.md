@@ -2,6 +2,9 @@
 
 Experiments and demonstrations of Stein Variational Gradient Descent (SVGD)
 
+See also: https://github.com/kimbente/svgd
+for a nicer repo on SVGD
+
 ## Structure
 
 - **`svgd-demo.py`**  

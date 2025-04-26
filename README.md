@@ -1,36 +1,36 @@
 # SVGD Exploration Repository
 
-Experiments and demonstrations of Stein Variational Gradient Descent (SVGD)
+Experiments and demonstrations of Stein Variational Gradient Descent (SVGD).
 
-See also: https://github.com/kimbente/svgd
-for a nicer repo on SVGD
+See also: [kimbente/svgd](https://github.com/kimbente/svgd)  
+for a more polished SVGD repository.
 
-## Structure
+## structure
 
 - **`svgd-demo.py`**  
-  Compares two SVGD implementations:
+  Compares two SVGD variants:
   - Exact RBF kernel (white particles)
-  - RFF approximation (red particles)
+  - Random Fourier Features (red particles)
   - Profiles per-step runtime and saves an MP4.
-  
-- **`svgd-kde.py`**
-  Does the SVGD thing but without autograd
+
+- **`svgd-kde.py`**  
+  SVGD without autograd:
   - RBF kernel
-  - uses KDE estimation for log p
-  Not as terrible as I thought.
+  - KDE-based estimation of log p
+  - Less dreadful than expected.
 
-## Features
+## features
 
-- Adaptive RBF kernel using the median heuristic.
+- Adaptive RBF kernel width via median heuristic.
 - Random Fourier Features for scalable kernel approximation.
-- autograd and KDE
+- Both autograd and manual (KDE) options.
 
-### Prerequisites
+## prerequisites
 
-- Python 3.8+  
-- [PyTorch](https://pytorch.org/)  
-- [Matplotlib](https://matplotlib.org/)  
-- [Imageio](https://imageio.github.io/) (for GIF conversion)
+- Python 3.8+
+- [PyTorch](https://pytorch.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Imageio](https://imageio.github.io/) (for MP4/GIF saving)
 
 ### Installation
 
